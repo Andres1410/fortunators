@@ -419,7 +419,7 @@ class _CreateBudgetWidgetState extends State<CreateBudgetWidget>
                                 'budget': FieldValue.arrayUnion(
                                     [_model.budgetNameController.text]),
                               };
-                              await buttonBudgetListRecord!.reference
+                              await buttonBudgetListRecord.reference
                                   .update(budgetListUpdateData);
                               logFirebaseEvent('Button_navigate_back');
                               context.pop();
