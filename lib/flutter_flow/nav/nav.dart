@@ -192,6 +192,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               builder: (context, params) => ChangePasswordWidget(),
             ),
             FFRoute(
+              name: 'changeCredit',
+              path: 'changeCredit',
+              builder: (context, params) => ChangePasswordWidget(),
+            ),
+            FFRoute(
               name: 'notificationsSettings',
               path: 'notificationsSettings',
               builder: (context, params) => NotificationsSettingsWidget(),

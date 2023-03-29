@@ -836,8 +836,10 @@ class _RegistroWidgetState extends State<RegistroWidget> {
 
                                           final usersCreateData =
                                               createUsersRecordData(
-                                            displayName: '',
-                                            password: '',
+                                            displayName: _model
+                                                .emailAdressController.text,
+                                            password:
+                                                _model.passwordController.text,
                                           );
                                           await UsersRecord.collection
                                               .doc(user.uid)

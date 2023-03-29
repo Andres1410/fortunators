@@ -206,13 +206,13 @@ class _NavBarPageState extends State<NavBarPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Icon(
-                    currentIndex == 1
-                        ? Icons.stacked_line_chart_rounded
-                        : Icons.stacked_line_chart_rounded,
-                    color: currentIndex == 1
+                    currentIndex == 0
+                        ? FontAwesomeIcons.gamepad
+                        : Icons.gamepad,
+                    color: currentIndex == 0
                         ? FlutterFlowTheme.of(context).primaryColor
                         : FlutterFlowTheme.of(context).grayLight,
-                    size: 24.0,
+                    size: 20.0,
                   ),
                   Text(
                     FFLocalizations.of(context).getText(

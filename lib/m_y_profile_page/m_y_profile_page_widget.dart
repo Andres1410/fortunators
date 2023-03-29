@@ -212,7 +212,7 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                               child: Text(
                                 valueOrDefault<String>(
                                   mYProfilePageUsersRecord.userTitle,
-                                  'Badass Busybody',
+                                  'Correo Electronico',
                                 ),
                                 style: FlutterFlowTheme.of(context)
                                     .bodyText1
@@ -390,6 +390,76 @@ class _MYProfilePageWidgetState extends State<MYProfilePageWidget> {
                                     FFLocalizations.of(context).getText(
                                       '03k0vw86' /* Change Password */,
                                     ),
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyText1,
+                                  ),
+                                  FlutterFlowIconButton(
+                                    borderColor: Colors.transparent,
+                                    borderRadius: 30.0,
+                                    buttonSize: 46.0,
+                                    icon: Icon(
+                                      Icons.chevron_right_rounded,
+                                      color: Color(0xFF95A1AC),
+                                      size: 20.0,
+                                    ),
+                                    onPressed: () {
+                                      print('IconButton pressed ...');
+                                    },
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 12.0, 0.0, 0.0),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      InkWell(
+                        onTap: () async {
+                          logFirebaseEvent(
+                              'M_Y_PROFILE_Container_yqfzr8ca_ON_TAP');
+                          logFirebaseEvent('Container_navigate_to');
+
+                          context.pushNamed('changePassword');
+                        },
+                        child: Material(
+                          color: Colors.transparent,
+                          elevation: 0.0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8.0),
+                          ),
+                          child: Container(
+                            width: MediaQuery.of(context).size.width * 0.9,
+                            height: 60.0,
+                            decoration: BoxDecoration(
+                              color: FlutterFlowTheme.of(context)
+                                  .primaryBackground,
+                              borderRadius: BorderRadius.circular(8.0),
+                              border: Border.all(
+                                color: FlutterFlowTheme.of(context).alternate,
+                                width: 2.0,
+                              ),
+                            ),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  16.0, 0.0, 4.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Cambiar tarjeta',
+                                    /*FFLocalizations.of(context).getText(
+                                      'efvtwj7k' /* Cambiar tarjeta */,
+                                    ),*/
                                     style:
                                         FlutterFlowTheme.of(context).bodyText1,
                                   ),

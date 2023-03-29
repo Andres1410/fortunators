@@ -1,3 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:fortunators/global/global.dart';
+import 'package:fortunators/widgets/progress_dialog.dart';
+
 import '/auth/auth_util.dart';
 import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_autocomplete_options_list.dart';
@@ -43,6 +48,61 @@ class _LoginWidgetState extends State<LoginWidget> {
 
     _unfocusNode.dispose();
     super.dispose();
+  }
+
+//login con firebase
+  validateForm() {
+    if (!_model.nombreController.text.contains("@")) {
+      Fluttertoast.showToast(msg: "El correo electronico no es valido...");
+    } else if (_model.passwordloginController.text.isEmpty) {
+      Fluttertoast.showToast(msg: "Contraseña es requerida...");
+    } else {
+      loginUser();
+    }
+  }
+
+  Future<dynamic> loginUser() async {
+    showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (BuildContext c) {
+          return ProgressDialog(
+            message: "Procesando, Por favor espere...",
+          );
+        });
+    try {
+      final User? firebaseUser = (await fAuth
+              .signInWithEmailAndPassword(
+        email: _model.nombreController!.text.trim(),
+        password: _model.passwordloginController.text.trim(),
+      )
+              .catchError((msg) {
+        Navigator.pop(context);
+        Fluttertoast.showToast(msg: "Error: " + msg.toString());
+      }))
+          .user;
+      if (firebaseUser != null) {
+        currentFirebaseUser = firebaseUser;
+        Fluttertoast.showToast(msg: "Inicio sesion exitoso...");
+        context.goNamedAuth('MY_Card', mounted);
+      } else {
+        Navigator.pop(context);
+        Fluttertoast.showToast(msg: "Un error ocurrio al loguearse...");
+      }
+    } on FirebaseAuthException catch (e) {
+      print('Failed with error code: ${e.code}');
+      print(e.message);
+    }
+    /*final User? firebaseUser = (await fAuth
+            .signInWithEmailAndPassword(
+      email: _model.nombreController!.text.trim(),
+      password: _model.passwordloginController.text.trim(),
+    )
+            .catchError((msg) {
+      Navigator.pop(context);
+      Fluttertoast.showToast(msg: "Error: " + msg.toString());
+    }))
+        .user;*/
   }
 
   @override
@@ -475,74 +535,9 @@ class _LoginWidgetState extends State<LoginWidget> {
                               padding: EdgeInsetsDirectional.fromSTEB(
                                   0.0, 15.0, 0.0, 0.0),
                               child: FFButtonWidget(
-                                onPressed: true
-                                    ? null
-                                    : () async {
-                                        logFirebaseEvent(
-                                            'LOGIN_PAGE_LOGIN_BTN_ON_TAP');
-                                        Function() _navigate = () {};
-                                        logFirebaseEvent('Button_auth');
-                                        GoRouter.of(context).prepareAuthEvent();
-
-                                        final user =
-                                            await createAccountWithEmail(
-                                          context,
-                                          _model.nombreController.text,
-                                          _model.passwordloginController.text,
-                                        );
-                                        if (user == null) {
-                                          return;
-                                        }
-
-                                        final usersCreateData =
-                                            createUsersRecordData(
-                                          displayName: 'text',
-                                          password: '',
-                                        );
-                                        await UsersRecord.collection
-                                            .doc(user.uid)
-                                            .update(usersCreateData);
-
-                                        _navigate = () => context.goNamedAuth(
-                                            'MY_Card', mounted);
-                                        if (_model.nombreController.text ==
-                                                null ||
-                                            _model.nombreController.text ==
-                                                '') {
-                                          logFirebaseEvent(
-                                              'Button_update_app_state');
-                                          setState(() {
-                                            FFAppState().nameState = false;
-                                          });
-                                        } else {
-                                          logFirebaseEvent(
-                                              'Button_update_app_state');
-                                          setState(() {
-                                            FFAppState().nameState = true;
-                                          });
-                                        }
-
-                                        if (_model.passwordloginController
-                                                    .text ==
-                                                null ||
-                                            _model.passwordloginController
-                                                    .text ==
-                                                '') {
-                                          logFirebaseEvent(
-                                              'Button_update_app_state');
-                                          setState(() {
-                                            FFAppState().nameState = true;
-                                          });
-                                        } else {
-                                          logFirebaseEvent(
-                                              'Button_update_app_state');
-                                          setState(() {
-                                            FFAppState().nameState = true;
-                                          });
-                                        }
-
-                                        _navigate();
-                                      },
+                                onPressed: () {
+                                  validateForm();
+                                },
                                 text: FFLocalizations.of(context).getText(
                                   'phf58iv3' /* login */,
                                 ),

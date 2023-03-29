@@ -2110,9 +2110,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
           'Permitenos notificarte para tu juego sea agradable y no sea complicado jugar y apostar online junto con usuarios de tu misma region.',
       'es': '',
     },
+    //editar perfil
     'efvtwj7k': {
-      'en': '',
-      'es': '',
+      'en': 'Change Credit Card',
+      'es': 'Cambiar tarjeta',
     },
     'ec5hfa1e': {
       'en': '',
