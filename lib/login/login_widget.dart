@@ -282,7 +282,8 @@ class _LoginWidgetState extends State<LoginWidget> {
                                           fontFamily:
                                               FlutterFlowTheme.of(context)
                                                   .bodyMediumFamily,
-                                          color: Color(0xFF666666),
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryBtnText,
                                           useGoogleFonts: GoogleFonts.asMap()
                                               .containsKey(
                                                   FlutterFlowTheme.of(context)
@@ -484,7 +485,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 fontFamily:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyMediumFamily,
-                                                color: Color(0xFF666666),
+                                                color: Colors.white,
                                                 letterSpacing: 1.0,
                                                 useGoogleFonts: GoogleFonts
                                                         .asMap()
@@ -492,7 +493,6 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                         FlutterFlowTheme.of(
                                                                 context)
                                                             .bodyMediumFamily),
-                                                lineHeight: 4.0,
                                               ),
                                           textAlign: TextAlign.center,
                                           keyboardType:

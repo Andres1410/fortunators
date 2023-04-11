@@ -164,8 +164,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Término y condiciónes',
     },
     '3ugmx2zp': {
-      'en': '',
-      'es': 'CONTINUAR',
+      'en': 'Continue',
+      'es': 'Continuar',
     },
     'lanj9wte': {
       'en': '',

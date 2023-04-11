@@ -282,7 +282,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            50.0),
+                                                            20.0),
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
@@ -292,7 +292,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            50.0),
+                                                            20.0),
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
@@ -302,7 +302,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            50.0),
+                                                            20.0),
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
@@ -312,7 +312,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            50.0),
+                                                            20.0),
                                                   ),
                                                   filled: true,
                                                   fillColor:
@@ -371,7 +371,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(50.0),
+                                                    BorderRadius.circular(20.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -379,7 +379,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(50.0),
+                                                    BorderRadius.circular(20.0),
                                               ),
                                               errorBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -387,7 +387,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(50.0),
+                                                    BorderRadius.circular(20.0),
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
@@ -396,7 +396,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(50.0),
+                                                    BorderRadius.circular(20.0),
                                               ),
                                               filled: true,
                                               fillColor: Color(0xFF262D34),
@@ -437,7 +437,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             focusedBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
@@ -445,7 +445,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             errorBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
@@ -453,7 +453,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             focusedErrorBorder:
                                                 OutlineInputBorder(
@@ -462,7 +462,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             filled: true,
                                             fillColor: Color(0xFF262D34),
@@ -497,7 +497,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             focusedBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
@@ -505,7 +505,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             errorBorder: OutlineInputBorder(
                                               borderSide: BorderSide(
@@ -513,7 +513,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             focusedErrorBorder:
                                                 OutlineInputBorder(
@@ -522,7 +522,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 width: 1.0,
                                               ),
                                               borderRadius:
-                                                  BorderRadius.circular(50.0),
+                                                  BorderRadius.circular(20.0),
                                             ),
                                             filled: true,
                                             fillColor: Color(0xFF262D34),
@@ -632,7 +632,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(50.0),
+                                                    BorderRadius.circular(20.0),
                                               ),
                                               focusedBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -640,7 +640,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(50.0),
+                                                    BorderRadius.circular(20.0),
                                               ),
                                               errorBorder: OutlineInputBorder(
                                                 borderSide: BorderSide(
@@ -648,7 +648,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(50.0),
+                                                    BorderRadius.circular(20.0),
                                               ),
                                               focusedErrorBorder:
                                                   OutlineInputBorder(
@@ -657,7 +657,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   width: 1.0,
                                                 ),
                                                 borderRadius:
-                                                    BorderRadius.circular(50.0),
+                                                    BorderRadius.circular(20.0),
                                               ),
                                               filled: true,
                                               fillColor: Color(0xFF262D34),
@@ -812,7 +812,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                             FFLocalizations.of(
                                                                     context)
                                                                 .getText(
-                                                          '3ugmx2zp' /*  */,
+                                                          '3ugmx2zp' /* Continue */,
                                                         ),
                                                         options:
                                                             FFButtonOptions(
@@ -861,7 +861,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                           borderRadius:
                                                               BorderRadius
                                                                   .circular(
-                                                                      30.0),
+                                                                      50.0),
                                                         ),
                                                       ),
                                                     ),
