@@ -3117,6 +3117,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'watch game',
       'es': 'ver juego',
     },
+    'xru1kv4b': {
+      'en': 'Home',
+      'es': 'Hogar',
+    },
   },
   // bookAppointment
   {

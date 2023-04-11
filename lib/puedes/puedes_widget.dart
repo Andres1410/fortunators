@@ -299,6 +299,46 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                               ),
                             ),
                           ),
+                          Align(
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  340.0, 200.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  InkWell(
+                                    onTap: () async {
+                                      logFirebaseEvent(
+                                          'PUEDES_PAGE_Text_6m07urmy_ON_TAP');
+                                      logFirebaseEvent('Text_navigate_to');
+
+                                      context.pushNamed('home');
+                                    },
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'xru1kv4b' /* Home */,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMediumFamily,
+                                            color: Color(0xFF47C316),
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMediumFamily),
+                                          ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
                         ],
                       ),
                   ],

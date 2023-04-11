@@ -100,8 +100,8 @@ class _CiencopWidgetState extends State<CiencopWidget> {
                                     20.0, 10.0, 0.0, 0.0),
                                 child: Image.asset(
                                   'assets/images/sala.png',
-                                  width: 786.5,
-                                  height: 1061.2,
+                                  width: 752.4,
+                                  height: 350.0,
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -115,7 +115,7 @@ class _CiencopWidgetState extends State<CiencopWidget> {
                               alignment: AlignmentDirectional(-0.79, -0.85),
                               child: Padding(
                                 padding: EdgeInsetsDirectional.fromSTEB(
-                                    400.0, 0.0, 0.0, 150.0),
+                                    400.0, 0.0, 0.0, 140.0),
                                 child: Text(
                                   FFLocalizations.of(context).getText(
                                     'zjk2lkdy' /* online */,
@@ -173,9 +173,51 @@ class _CiencopWidgetState extends State<CiencopWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 40.0, 0.0, 0.0),
                                     child: Image.asset(
-                                      'assets/images/Vector_52.png',
+                                      'assets/images/linegreen.png',
                                       width: 8.0,
                                       height: 251.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Align(
+                            alignment: AlignmentDirectional(-0.76, -0.6),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  500.0, 230.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -226,41 +268,254 @@ class _CiencopWidgetState extends State<CiencopWidget> {
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: AlignmentDirectional(-0.76, -0.6),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  80.0, 0.0, 0.0, 0.0),
-                              child: Image.asset(
-                                'assets/images/fortuna.png',
-                                width: 50.0,
-                                height: 50.0,
-                                fit: BoxFit.cover,
+                                  90.0, 60.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: AlignmentDirectional(-0.76, -0.6),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  160.0, 0.0, 0.0, 0.0),
-                              child: Image.asset(
-                                'assets/images/fortuna.png',
-                                width: 50.0,
-                                height: 50.0,
-                                fit: BoxFit.cover,
+                                  90.0, 160.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
                           Align(
-                            alignment: AlignmentDirectional(0.0, 0.0),
+                            alignment: AlignmentDirectional(-0.76, -0.6),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  230.0, 0.0, 0.0, 0.0),
-                              child: Image.asset(
-                                'assets/images/fortuna.png',
-                                width: 50.0,
-                                height: 50.0,
-                                fit: BoxFit.cover,
+                                  90.0, 220.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Align(
+                            alignment: AlignmentDirectional(-0.76, -0.6),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  500.0, 20.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Align(
+                            alignment: AlignmentDirectional(-0.76, -0.6),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  500.0, 80.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Align(
+                            alignment: AlignmentDirectional(-0.76, -0.6),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  500.0, 160.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        0.0, 20.0, 20.0, 0.0),
+                                    child: Image.asset(
+                                      'assets/images/fortuna.png',
+                                      width: 40.0,
+                                      height: 40.0,
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ],
                               ),
                             ),
                           ),
