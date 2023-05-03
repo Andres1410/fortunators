@@ -164,8 +164,8 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'es': 'Término y condiciónes',
     },
     '3ugmx2zp': {
-      'en': '',
-      'es': 'CONTINUAR',
+      'en': 'Continue',
+      'es': 'Continuar',
     },
     'lanj9wte': {
       'en': '',
@@ -3116,6 +3116,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
     '812pvli6': {
       'en': 'watch game',
       'es': 'ver juego',
+    },
+    'xru1kv4b': {
+      'en': 'Home',
+      'es': 'Hogar',
     },
   },
   // bookAppointment

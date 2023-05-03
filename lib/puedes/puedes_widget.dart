@@ -93,7 +93,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                               alignment: AlignmentDirectional(0.08, 0.03),
                               child: Image.asset(
                                 'assets/images/redtable.png',
-                                width: 700.0,
+                                width: 721.0,
                                 fit: BoxFit.fill,
                               ),
                             ),
@@ -160,7 +160,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                             alignment: AlignmentDirectional(0.0, 0.0),
                             child: Padding(
                               padding: EdgeInsetsDirectional.fromSTEB(
-                                  190.0, 40.0, 0.0, 0.0),
+                                  150.0, 100.0, 0.0, 0.0),
                               child: Row(
                                 mainAxisSize: MainAxisSize.max,
                                 children: [
@@ -189,8 +189,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                           iconPadding:
                                               EdgeInsetsDirectional.fromSTEB(
                                                   0.0, 0.0, 0.0, 0.0),
-                                          color: FlutterFlowTheme.of(context)
-                                              .black600,
+                                          color: Color(0xFF780303),
                                           textStyle: FlutterFlowTheme.of(
                                                   context)
                                               .titleSmall
@@ -207,11 +206,15 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                                             .titleSmallFamily),
                                               ),
                                           borderSide: BorderSide(
-                                            color: Color(0xFF8C0404),
+                                            color: Colors.white,
                                             width: 1.0,
                                           ),
                                           borderRadius:
-                                              BorderRadius.circular(8.0),
+                                              BorderRadius.circular(20.0),
+                                          hoverColor: Color(0xFF780303),
+                                          hoverTextColor:
+                                              FlutterFlowTheme.of(context)
+                                                  .platinum,
                                         ),
                                       ),
                                     ),
@@ -233,7 +236,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                         iconPadding:
                                             EdgeInsetsDirectional.fromSTEB(
                                                 0.0, 0.0, 0.0, 0.0),
-                                        color: Color(0xFF090F13),
+                                        color: Color(0xFF780303),
                                         textStyle: FlutterFlowTheme.of(context)
                                             .titleSmall
                                             .override(
@@ -249,11 +252,11 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                                           .titleSmallFamily),
                                             ),
                                         borderSide: BorderSide(
-                                          color: Color(0xFF8C0404),
+                                          color: Colors.white,
                                           width: 1.0,
                                         ),
                                         borderRadius:
-                                            BorderRadius.circular(8.0),
+                                            BorderRadius.circular(20.0),
                                       ),
                                     ),
                                   ),
@@ -272,7 +275,7 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                       iconPadding:
                                           EdgeInsetsDirectional.fromSTEB(
                                               0.0, 0.0, 0.0, 0.0),
-                                      color: Color(0xFF090F13),
+                                      color: Color(0xFF780303),
                                       textStyle: FlutterFlowTheme.of(context)
                                           .titleSmall
                                           .override(
@@ -286,10 +289,50 @@ class _PuedesWidgetState extends State<PuedesWidget> {
                                                         .titleSmallFamily),
                                           ),
                                       borderSide: BorderSide(
-                                        color: Color(0xFF8C0404),
+                                        color: Colors.white,
                                         width: 1.0,
                                       ),
-                                      borderRadius: BorderRadius.circular(8.0),
+                                      borderRadius: BorderRadius.circular(20.0),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          Align(
+                            alignment: AlignmentDirectional(0.0, 0.0),
+                            child: Padding(
+                              padding: EdgeInsetsDirectional.fromSTEB(
+                                  340.0, 200.0, 0.0, 0.0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  InkWell(
+                                    onTap: () async {
+                                      logFirebaseEvent(
+                                          'PUEDES_PAGE_Text_6m07urmy_ON_TAP');
+                                      logFirebaseEvent('Text_navigate_to');
+
+                                      context.pushNamed('home');
+                                    },
+                                    child: Text(
+                                      FFLocalizations.of(context).getText(
+                                        'xru1kv4b' /* Home */,
+                                      ),
+                                      textAlign: TextAlign.center,
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodyMedium
+                                          .override(
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodyMediumFamily,
+                                            color: Color(0xFF47C316),
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMediumFamily),
+                                          ),
                                     ),
                                   ),
                                 ],
