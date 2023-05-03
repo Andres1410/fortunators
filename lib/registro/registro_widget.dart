@@ -421,7 +421,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            50.0),
+                                                            20.0),
                                                   ),
                                                   focusedBorder:
                                                       OutlineInputBorder(
@@ -431,7 +431,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            50.0),
+                                                            20.0),
                                                   ),
                                                   errorBorder:
                                                       OutlineInputBorder(
@@ -441,7 +441,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            50.0),
+                                                            20.0),
                                                   ),
                                                   focusedErrorBorder:
                                                       OutlineInputBorder(
@@ -451,7 +451,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                     ),
                                                     borderRadius:
                                                         BorderRadius.circular(
-                                                            50.0),
+                                                            20.0),
                                                   ),
                                                   filled: true,
                                                   fillColor: Color(0xFF262D34),
@@ -484,6 +484,218 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                         .getText(
                                                   'l92pnshd' /*  */,
                                                 ),
+
+                                                borderRadius:
+                                                    BorderRadius.circular(20.0),
+                                              ),
+                                              focusedBorder: OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: Color(0x00000000),
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(20.0),
+                                              ),
+                                              errorBorder: OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: Color(0x00000000),
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(20.0),
+                                              ),
+                                              focusedErrorBorder:
+                                                  OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: Color(0x00000000),
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(20.0),
+                                              ),
+                                              filled: true,
+                                              fillColor: Color(0xFF262D34),
+                                              contentPadding:
+                                                  EdgeInsetsDirectional
+                                                      .fromSTEB(20.0, 10.0,
+                                                          20.0, 10.0),
+                                            ),
+                                            style: FlutterFlowTheme.of(context)
+                                                .bodyMedium,
+                                            textAlign: TextAlign.start,
+                                            keyboardType:
+                                                TextInputType.emailAddress,
+                                            validator: _model
+                                                .emailregistroControllerValidator
+                                                .asValidator(context),
+                                          ),
+                                        ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            30.0, 8.0, 30.0, 8.0),
+                                        child: TextFormField(
+                                          controller: _model.telefonoController,
+                                          autofocus: true,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            hintText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'l92pnshd' /* telephone */,
+                                            ),
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall,
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0xDAFF0F13),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                            ),
+                                            filled: true,
+                                            fillColor: Color(0xFF262D34),
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
+                                          textAlign: TextAlign.start,
+                                          validator: _model
+                                              .telefonoControllerValidator
+                                              .asValidator(context),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            30.0, 8.0, 30.0, 8.0),
+                                        child: TextFormField(
+                                          controller: _model.edadController,
+                                          autofocus: true,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            hintText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'x4ly0xvm' /* age */,
+                                            ),
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall,
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0xDAFF0F13),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(20.0),
+                                            ),
+                                            filled: true,
+                                            fillColor: Color(0xFF262D34),
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium,
+                                          textAlign: TextAlign.start,
+                                          validator: _model
+                                              .edadControllerValidator
+                                              .asValidator(context),
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: EdgeInsetsDirectional.fromSTEB(
+                                            30.0, 8.0, 30.0, 8.0),
+                                        child: TextFormField(
+                                          controller: _model.sexoController,
+                                          autofocus: true,
+                                          obscureText: false,
+                                          decoration: InputDecoration(
+                                            hintText:
+                                                FFLocalizations.of(context)
+                                                    .getText(
+                                              'wg6xicsv' /* sex */,
+                                            ),
+                                            hintStyle:
+                                                FlutterFlowTheme.of(context)
+                                                    .bodySmall,
+                                            enabledBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0xDAFF0F13),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(50.0),
+                                            ),
+                                            focusedBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(50.0),
+                                            ),
+                                            errorBorder: OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+                                              ),
+                                              borderRadius:
+                                                  BorderRadius.circular(50.0),
+                                            ),
+                                            focusedErrorBorder:
+                                                OutlineInputBorder(
+                                              borderSide: BorderSide(
+                                                color: Color(0x00000000),
+                                                width: 1.0,
+
                                                 labelStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyText2,
@@ -536,6 +748,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                 ),
                                                 filled: true,
                                                 fillColor: Color(0xFF262D34),
+>>>>>>> Andres
                                               ),
                                               style:
                                                   FlutterFlowTheme.of(context)
@@ -560,6 +773,48 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                         .getText(
                                                   'x4ly0xvm' /*  */,
                                                 ),
+
+                                                borderRadius:
+                                                    BorderRadius.circular(20.0),
+                                              ),
+                                              focusedBorder: OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: Color(0x00000000),
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(20.0),
+                                              ),
+                                              errorBorder: OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: Color(0x00000000),
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(20.0),
+                                              ),
+                                              focusedErrorBorder:
+                                                  OutlineInputBorder(
+                                                borderSide: BorderSide(
+                                                  color: Color(0x00000000),
+                                                  width: 1.0,
+                                                ),
+                                                borderRadius:
+                                                    BorderRadius.circular(20.0),
+                                              ),
+                                              filled: true,
+                                              fillColor: Color(0xFF262D34),
+                                              contentPadding:
+                                                  EdgeInsetsDirectional
+                                                      .fromSTEB(20.0, 10.0,
+                                                          20.0, 10.0),
+                                              suffixIcon: InkWell(
+                                                onTap: () => setState(
+                                                  () => _model
+                                                          .passwordVisibility =
+                                                      !_model
+                                                          .passwordVisibility,
+=======
                                                 labelStyle:
                                                     FlutterFlowTheme.of(context)
                                                         .bodyText2,
@@ -599,6 +854,7 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                                   borderRadius:
                                                       BorderRadius.circular(
                                                           50.0),
+>>>>>>> Andres
                                                 ),
                                                 focusedErrorBorder:
                                                     OutlineInputBorder(
@@ -837,7 +1093,129 @@ class _RegistroWidgetState extends State<RegistroWidget> {
                                             ),
                                         ],
                                       ),
+
+                                      if (responsiveVisibility(
+                                        context: context,
+                                        tabletLandscape: false,
+                                        desktop: false,
+                                      ))
+                                        Padding(
+                                          padding:
+                                              EdgeInsetsDirectional.fromSTEB(
+                                                  25.0, 10.0, 25.0, 0.0),
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            children: [
+                                              // actualizacion
+                                              if (responsiveVisibility(
+                                                context: context,
+                                                tabletLandscape: false,
+                                                desktop: false,
+                                              ))
+                                                Expanded(
+                                                  child: Align(
+                                                    alignment:
+                                                        AlignmentDirectional(
+                                                            0.05, -2.0),
+                                                    child: Padding(
+                                                      padding:
+                                                          EdgeInsetsDirectional
+                                                              .fromSTEB(
+                                                                  0.0,
+                                                                  1.0,
+                                                                  0.0,
+                                                                  8.0),
+                                                      child: FFButtonWidget(
+                                                        onPressed: () async {
+                                                          logFirebaseEvent(
+                                                              'REGISTRO_PAGE_create_ON_TAP');
+                                                          logFirebaseEvent(
+                                                              'create_auth');
+                                                          GoRouter.of(context)
+                                                              .prepareAuthEvent();
+
+                                                          final user =
+                                                              await createAccountWithEmail(
+                                                            context,
+                                                            _model
+                                                                .emailregistroController
+                                                                .text,
+                                                            _model
+                                                                .passwordController
+                                                                .text,
+                                                          );
+                                                          if (user == null) {
+                                                            return;
+                                                          }
+
+                                                          context.goNamedAuth(
+                                                              'home', mounted);
+                                                        },
+                                                        text:
+                                                            FFLocalizations.of(
+                                                                    context)
+                                                                .getText(
+                                                          '3ugmx2zp' /* Continue */,
+                                                        ),
+                                                        options:
+                                                            FFButtonOptions(
+                                                          width: 137.1,
+                                                          height: 50.0,
+                                                          padding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          iconPadding:
+                                                              EdgeInsetsDirectional
+                                                                  .fromSTEB(
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0,
+                                                                      0.0),
+                                                          color: FlutterFlowTheme
+                                                                  .of(context)
+                                                              .background,
+                                                          textStyle:
+                                                              FlutterFlowTheme.of(
+                                                                      context)
+                                                                  .titleSmall
+                                                                  .override(
+                                                                    fontFamily:
+                                                                        FlutterFlowTheme.of(context)
+                                                                            .titleSmallFamily,
+                                                                    color: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .textColor,
+                                                                    useGoogleFonts: GoogleFonts
+                                                                            .asMap()
+                                                                        .containsKey(
+                                                                            FlutterFlowTheme.of(context).titleSmallFamily),
+                                                                  ),
+                                                          elevation: 3.0,
+                                                          borderSide:
+                                                              BorderSide(
+                                                            color: Color(
+                                                                0xDAFF0F13),
+                                                            width: 1.0,
+                                                          ),
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      50.0),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  ),
+                                                ),
+                                            ],
+                                          ),
+                                        ),
+                                    ],
                                     ),
+>>>>>>> Andres
                                   ),
                                 ),
                               if (responsiveVisibility(
