@@ -359,6 +359,44 @@ class _LoginWidgetState extends State<LoginWidget> {
                                               )
                                             : null,
                                       ),
+
+                                      filled: true,
+                                      fillColor: Color(0xFF202020),
+                                      suffixIcon: _model
+                                              .nombreController!.text.isNotEmpty
+                                          ? InkWell(
+                                              onTap: () async {
+                                                _model.nombreController
+                                                    ?.clear();
+                                                setState(() {});
+                                              },
+                                              child: Icon(
+                                                Icons.clear,
+                                                color: Color(0xFF757575),
+                                                size: 22.0,
+                                              ),
+                                            )
+                                          : null,
+                                    ),
+                                    style: FlutterFlowTheme.of(context)
+                                        .bodyMedium
+                                        .override(
+                                          fontFamily:
+                                              FlutterFlowTheme.of(context)
+                                                  .bodyMediumFamily,
+                                          color: FlutterFlowTheme.of(context)
+                                              .primaryBtnText,
+                                          useGoogleFonts: GoogleFonts.asMap()
+                                              .containsKey(
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodyMediumFamily),
+                                        ),
+                                    textAlign: TextAlign.center,
+                                    validator: _model.nombreControllerValidator
+                                        .asValidator(context),
+                                  );
+                                },
+
                                       style: FlutterFlowTheme.of(context)
                                           .bodyMedium,
                                       textAlign: TextAlign.center,
@@ -368,6 +406,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                     );
                                   },
                                 ),
+>>>>>>> Andres
                               ),
                               SizedBox(
                                 height: 55,
@@ -561,6 +600,132 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 ),
                                               ),
                                             ),
+
+                                          ),
+                                          style: FlutterFlowTheme.of(context)
+                                              .bodyMedium
+                                              .override(
+                                                fontFamily:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodyMediumFamily,
+                                                color: Colors.white,
+                                                letterSpacing: 1.0,
+                                                useGoogleFonts: GoogleFonts
+                                                        .asMap()
+                                                    .containsKey(
+                                                        FlutterFlowTheme.of(
+                                                                context)
+                                                            .bodyMediumFamily),
+                                              ),
+                                          textAlign: TextAlign.center,
+                                          keyboardType:
+                                              TextInputType.visiblePassword,
+                                          validator: _model
+                                              .passwordloginControllerValidator
+                                              .asValidator(context),
+                                        );
+                                      },
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            Expanded(
+                              child: Align(
+                                alignment: AlignmentDirectional(0.05, -2.0),
+                                child: Padding(
+                                  padding: EdgeInsetsDirectional.fromSTEB(
+                                      0.0, 15.0, 0.0, 0.0),
+                                  child: FFButtonWidget(
+                                    onPressed: true
+                                        ? null
+                                        : () async {
+                                            logFirebaseEvent(
+                                                'LOGIN_PAGE_LOGIN_BTN_ON_TAP');
+                                            Function() _navigate = () {};
+                                            logFirebaseEvent('Button_auth');
+                                            GoRouter.of(context)
+                                                .prepareAuthEvent();
+
+                                            final user = await signInWithEmail(
+                                              context,
+                                              _model.nombreController.text,
+                                              _model
+                                                  .passwordloginController.text,
+                                            );
+                                            if (user == null) {
+                                              return;
+                                            }
+
+                                            _navigate = () => context
+                                                .goNamedAuth('home', mounted);
+                                            if (_model.nombreController.text ==
+                                                    null ||
+                                                _model.nombreController.text ==
+                                                    '') {
+                                              logFirebaseEvent(
+                                                  'Button_update_app_state');
+                                              setState(() {
+                                                FFAppState().nameState = false;
+                                              });
+                                            } else {
+                                              logFirebaseEvent(
+                                                  'Button_update_app_state');
+                                              setState(() {
+                                                FFAppState().nameState = true;
+                                              });
+                                            }
+
+                                            if (_model.passwordloginController
+                                                        .text ==
+                                                    null ||
+                                                _model.passwordloginController
+                                                        .text ==
+                                                    '') {
+                                              logFirebaseEvent(
+                                                  'Button_update_app_state');
+                                              setState(() {
+                                                FFAppState().nameState = true;
+                                              });
+                                            } else {
+                                              logFirebaseEvent(
+                                                  'Button_update_app_state');
+                                              setState(() {
+                                                FFAppState().nameState = true;
+                                              });
+                                            }
+
+                                            _navigate();
+                                          },
+                                    text: FFLocalizations.of(context).getText(
+                                      'phf58iv3' /* login */,
+                                    ),
+                                    options: FFButtonOptions(
+                                      width: 130.0,
+                                      height: 40.0,
+                                      padding: EdgeInsetsDirectional.fromSTEB(
+                                          0.0, 0.0, 0.0, 0.0),
+                                      iconPadding:
+                                          EdgeInsetsDirectional.fromSTEB(
+                                              0.0, 0.0, 0.0, 0.0),
+                                      color:
+                                          FlutterFlowTheme.of(context).black600,
+                                      textStyle: FlutterFlowTheme.of(context)
+                                          .titleSmall
+                                          .override(
+                                            fontFamily:
+                                                FlutterFlowTheme.of(context)
+                                                    .titleSmallFamily,
+                                            color: Colors.white,
+                                            useGoogleFonts: GoogleFonts.asMap()
+                                                .containsKey(
+                                                    FlutterFlowTheme.of(context)
+                                                        .titleSmallFamily),
+                                          ),
+                                      elevation: 2.0,
+                                      borderSide: BorderSide(
+                                        color: Color(0xDAFF0F13),
+                                        width: 1.0,
+
                                             style: FlutterFlowTheme.of(context)
                                                 .bodyMedium
                                                 .override(
@@ -584,6 +749,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                                                 .asValidator(context),
                                           );
                                         },
+>>>>>>> Andres
                                       ),
                                     ),
                                   ),
